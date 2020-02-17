@@ -20,6 +20,9 @@ import java.util.Date;
 @RequestMapping("pay")
 public class PayController {
 
+    /*
+    * 创建订单并提交给阿里
+    * */
     @RequestMapping("payForGoods")
     public void payForGoods(@RequestParam(value = "name",defaultValue = "无名氏") String name,@RequestParam(value = "phoneNumber",defaultValue = "12357846662") String phoneNumber, String price, HttpServletRequest request, HttpServletResponse response) throws IOException{
         AlipayClient alipayClient = new DefaultAlipayClient(
