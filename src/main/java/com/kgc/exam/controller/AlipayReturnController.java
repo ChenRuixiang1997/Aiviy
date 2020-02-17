@@ -16,7 +16,9 @@ import java.util.Map;
 
 @Controller
 public class AlipayReturnController {
-
+    /*
+    * 阿里支付模块返回
+    * */
     @RequestMapping("alipayReturn")
     public void AlipayReturn(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Map<String, String> params = new HashMap<String, String>();
